@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Josefin+Sans:wght@200&display=swap');
+*{
+    transition: all 1s ease-in-out;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2d5a7b;
+}
+
+header {
+    background-color: #01416f;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+}
+
+p {
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: right;
+    padding: 2rem;
+    background-image: url(school.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #01416f;
+    font-weight: bold;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #01416f;
+    text-decoration: none;
+    border: 1px solid #01416f;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h2,
+h3 {
+    text-decoration: underline;
+}
+
+.btn:hover {
+    background-color: #01416f;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #01416f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.marquee-text {
+    color: #01416f;
+    /* Adjust the color as needed */
+    font-weight: bold;
+}
+
+
+img {
+    height: 100px;
+    width: auto;
+    border-radius: 35%;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
