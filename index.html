@@ -5,52 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NHPS Website</title>
-    
+
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+
     <!-- Your existing styles -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Your existing favicon link -->
     <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <nav>
-
-            <div class="logo"><img src="./logo.jpg" alt="logo">
-                <p>New Happy Public School, Bilaspur</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                New Happy Public School, Bilaspur
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why">Why NHPS</a>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#why">Why NHPS</a></li>
-            </ul>
         </nav>
     </header>
     <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img src="./ad.jpg" alt="Admissions Open" style="height: 100%; width: auto; border-radius: 0%;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img src="./ad.jpg" alt="Admissions Open" style="width: 100%; border-radius: 0%;">
+            </div>
         </div>
     </div>
 
-
-    <!-- ... (previous code) ... -->
-
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to New Happy Public School</h1>
-            <p>We Are Known the best for Empowering Future Leaders Through Education</p>
-            <marquee behavior="scroll" direction="left" scrollamount="5">
-                <span class="marquee-text">Admissions Open - 2024! Apply Now and Join the New Happy Public
-                    School.</span>
-            </marquee>
-            <a class="btn" onclick="showAlert()">Apply Now</a>
+    <section id="home" class="bg-light">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Welcome to New Happy Public School</h1>
+                <p class="lead">We Are Known the best for Empowering Future Leaders Through Education</p>
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    <span class="marquee-text">Admissions Open - 2024! Apply Now and Join the New Happy Public
+                        School.</span>
+                </marquee>
+                <a class="btn btn-primary" onclick="showAlert()">Apply Now</a>
+            </div>
         </div>
     </section>
     <section id="about">
@@ -59,63 +76,42 @@
             <p>Welcome to New Happy Public School in Bilaspur – a place where learning is fun and exciting!<br><br>Our
                 school is not just about books; it's a friendly community where students grow in every way.<br><br>At
                 New Happy Public School, we have amazing teachers who really care about students. We want to make sure
-                everyone enjoys coming to school and learns new things every day.<br><br>Our classrooms are cool, and we
-                have great places for sports and other fun activities. We believe that learning doesn't only happen in
-                books but also in trying out new things and making friends.<br><br>We want our students to be happy,
+                everyone enjoys coming to school and learns new things every day.<br><br>Our classrooms are cool, and
+                we have great places for sports and other fun activities. We believe that learning doesn't only happen
+                in books but also in trying out new things and making friends.<br><br>We want our students to be happy,
                 smart, and kind. That's why we have lots of activities that help everyone learn and develop good habits.
-                We celebrate when students do well and help them when they find something tricky.<br><br>New Happy
-                Public School is like a big family where everyone helps each other. Come join us, and let's have a
-                fantastic time learning and growing together!</p>
+                We celebrate when students do
+            </p>
         </div>
     </section>
 
     <section id="courses">
         <div class="container">
             <h2>Our Courses</h2>
-            <div class="course">
-                <h3>Primary</h3>
-                <p>Welcome to the world of Primary Education at New Happy Public School, Bilaspur – a place where little
-                    minds embark on an exciting journey of learning and discovery!<br><br>Our primary school is a lively
-                    hub where education is not just about books; it's about exploring, asking questions, and having fun
-                    while learning. Our dedicated teachers create a warm and nurturing environment, helping young
-                    learners build a strong foundation for a lifetime of knowledge.<br><br>We believe in hands-on
-                    experiences and interactive lessons that make learning enjoyable. Our classrooms are vibrant spaces
-                    where curiosity is encouraged, and each child's unique talents are celebrated. At New Happy Public
-                    School, we lay the groundwork for a happy and successful educational journey. Join us as we shape
-                    bright futures and make learning an adventure!</p>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Primary</h5>
+                        <p class="card-text">Welcome to the world of Primary Education at New Happy Public School,
+                            Bilaspur – a place where little minds embark on an exciting journey of learning and
+                            discovery!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Secondary</h5>
+                        <p class="card-text">Welcome to the Secondary Education program at New Happy Public School,
+                            Bilaspur – a stepping stone toward academic excellence and personal growth!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sr. Secondary</h5>
+                        <p class="card-text">Welcome to Senior Secondary Education at New Happy Public School,
+                            Bilaspur – a crucial phase where academic excellence meets future aspirations!</p>
+                    </div>
+                </div>
             </div>
-            <div class="course">
-                <h3>Secondary</h3>
-                <p>Welcome to the Secondary Education program at New Happy Public School, Bilaspur – a stepping stone
-                    toward academic excellence and personal growth!<br><br>Our Secondary School program, following the
-                    CBSE curriculum, is designed to equip students with the knowledge and skills needed for the
-                    challenges ahead. As students progress through the 10th grade, our experienced teachers guide them
-                    with a focus on comprehensive learning, critical thinking, and problem-solving.<br><br>We offer a
-                    supportive and engaging environment where students not only prepare for board examinations but also
-                    develop a deeper understanding of various subjects. Our state-of-the-art facilities, coupled with a
-                    dedicated faculty, create an atmosphere conducive to holistic development.<br><br>At New Happy
-                    Public School, we strive to foster a sense of responsibility, resilience, and a passion for
-                    learning, ensuring that students are well-prepared for the next phase of their academic journey.
-                    Join us as we navigate through the exciting challenges of Secondary Education and lay the groundwork
-                    for a successful future.</p>
-            </div>
-            <div class="course">
-                <h3>Sr. Secondary</h3>
-                <p>Welcome to Senior Secondary Education at New Happy Public School, Bilaspur – a crucial phase where
-                    academic excellence meets future aspirations!<br><br>Our Senior Secondary program, aligned with the
-                    CBSE board, is tailored to empower students as they embark on their 12th-grade journey. At this
-                    stage, our experienced educators provide focused guidance to ensure students not only excel in board
-                    examinations but also develop critical thinking and problem-solving skills for their future
-                    endeavors.<br><br>We offer a dynamic learning environment with advanced facilities and resources to
-                    support students in their pursuit of knowledge. The curriculum is designed to be comprehensive,
-                    laying the groundwork for specialized fields of study and career paths. Our goal is to nurture
-                    well-rounded individuals who are not just academically proficient but also equipped with essential
-                    life skills.<br><br>New Happy Public School stands committed to preparing students for the
-                    challenges of higher education and beyond. Join us in this exciting phase of education, where we
-                    foster a passion for learning, innovation, and success. Together, let's build a foundation for a
-                    bright and promising future.</p>
-            </div>
-            <!-- Add more courses as needed -->
         </div>
     </section>
 
@@ -124,44 +120,39 @@
             <h2>Contact Us</h2>
             <p>Have questions or want to enroll? Reach out to us!</p>
             <div class="contact-buttons">
-                <a href="mailto:nhpsbilaspur@gmail.com" class="btn">Email Us</a>
-                <a href="tel: 01735-274840" class="btn">Call Us</a>
-                <!-- <a href="https://www.youtube.com/schoolname" class="btn" target="_blank">YouTube</a> -->
-                <a href="https://www.facebook.com/nhpsbilaspur/" class="btn" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/nhpsbls/?hl=en" class="btn" target="_blank">Instagram</a>
+                <a href="mailto:nhpsbilaspur@gmail.com" class="btn btn-primary">Email Us</a>
+                <a href="tel:01735-274840" class="btn btn-primary">Call Us</a>
+                <a href="https://www.facebook.com/nhpsbilaspur/" class="btn btn-primary" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/nhpsbls/?hl=en" class="btn btn-primary" target="_blank">Instagram</a>
             </div>
         </div>
     </section>
+
     <section id="why">
         <div class="container">
             <h2>Why To Choose NHPS</h2>
-            <img src="./ad.jpg" alt="image" style="height: auto; width: auto; border-radius: 0%; text-align: center;">
+            <img src="./ad.jpg" alt="image" style="width: 100%; border-radius: 0%; text-align: center;">
             <h4>300+ Happy Students (Happians)</h4>
             <h4>100+ Students settled abroad</h4>
-            <h4>Co-curricullem activities</h4>
+            <h4>Co-curricular activities</h4>
             <h5>and much more</h5>
         </div>
     </section>
 
-    <footer>
-        <div>
-            <p>&copy; All rights reserved.</p><br>
-           <p>This website is submitted to school as a project by Radhika Aggarwal (11th non-med)</p>
-            <p>Website created by <a href="https://www.adarshdhiman.me/" target="_blank"> DhimanTechBytes</a></p>
+    <footer class="bg-light">
+        <div class="container">
+            <p>&copy; All rights reserved.</p>
+            <p>This website is submitted to school as a project by Radhika Aggarwal (11th non-med)</p>
+            <p>Website created by <a href="https://www.adarshdhiman.me/" target="_blank">DhimanTechBytes</a></p>
         </div>
     </footer>
 
-
-    <!-- Your existing HTML content -->
-
     <!-- Bootstrap JS and Popper.js scripts -->
-    <script src="./https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="./https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="./https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="./script.js">
-       
-    
     </script>
 </body>
 
