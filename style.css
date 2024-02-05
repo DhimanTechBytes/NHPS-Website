@@ -31,7 +31,7 @@ nav {
     display: flex;
 }
 
-.logo p {
+p {
     margin-left: 15px;
     margin-top: 30px;
 }
@@ -51,7 +51,8 @@ nav a {
 }
 
 .hero {
-    text-align: right;
+    text-align: center;
+    /* Center text in the hero section */
     padding: 2rem;
     background-image: url(school.jpeg);
     background-size: cover;
@@ -71,13 +72,19 @@ nav a {
     transition: background-color 0.3s, color 0.3s;
 }
 
+h2,
+h3 {
+    text-decoration: underline;
+}
+
 .btn:hover {
     background-color: #01416f;
     color: #fff;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 100%;
+    /* Make the container responsive */
     margin: 0 auto;
     padding: 2rem;
     background-color: #fff;
@@ -97,39 +104,18 @@ footer {
 }
 
 .marquee-text {
+    display: block;
+    /* Ensure marquee text is displayed as a block */
+    white-space: nowrap;
+    /* Prevent marquee text from wrapping */
+    overflow: hidden;
+    /* Hide overflowing content */
     color: #01416f;
+    /* Adjust the color as needed */
     font-weight: bold;
 }
 
-img {
+.logo {
     height: 100px;
     width: auto;
-    border-radius: 35%;
-}
-
-.modal {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    max-width: 80%;
-    max-height: 80%;
-    overflow: hidden;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
 }
