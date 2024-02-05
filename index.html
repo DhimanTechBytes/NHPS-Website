@@ -11,65 +11,47 @@
 
     <!-- Your existing styles -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Your existing favicon link -->
     <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header style="display: flex; text-align: center;">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
-                <img src="./logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="logo">
-                New Happy Public School, Bilaspur
+                <img src="./logo.jpg" alt="logo" class="logo">
+                <p class="navbar-text">New Happy Public School,<br> Bilaspur</p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#courses">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why">Why NHPS</a>
-                    </li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why NHPS</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div id="myModal" class="modal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <img src="./ad.jpg" alt="Admissions Open" style="width: 100%; border-radius: 0%;">
-            </div>
-        </div>
-    </div>
 
     <section id="home" class="bg-light">
-        <div class="container">
-            <div class="jumbotron">
-                <h1 class="display-4">Welcome to New Happy Public School</h1>
-                <p class="lead">We Are Known the best for Empowering Future Leaders Through Education</p>
-                <marquee behavior="scroll" direction="left" scrollamount="5">
-                    <span class="marquee-text">Admissions Open - 2024! Apply Now and Join the New Happy Public
-                        School.</span>
-                </marquee>
-                <a class="btn btn-primary" onclick="showAlert()">Apply Now</a>
-            </div>
+        <div class="container hero">
+            <h1>Welcome to New Happy Public School</h1>
+            <p>We Are Known the best for Empowering Future Leaders Through Education</p>
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                <span class="marquee-text">Admissions Open - 2024! Apply Now and Join the New Happy Public
+                    School.</span>
+            </marquee>
+            <a href="#" class="btn btn-primary" onclick="showAlert()">Apply Now</a>
         </div>
     </section>
+
+
+
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
@@ -93,22 +75,24 @@
                     <div class="card-body">
                         <h5 class="card-title">Primary</h5>
                         <p class="card-text">Welcome to the world of Primary Education at New Happy Public School,
-                            Bilaspur – a place where little minds embark on an exciting journey of learning and
-                            discovery!</p>
+                            Bilaspur –
+                            a place where little minds embark on an exciting journey of learning and discovery!</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Secondary</h5>
                         <p class="card-text">Welcome to the Secondary Education program at New Happy Public School,
-                            Bilaspur – a stepping stone toward academic excellence and personal growth!</p>
+                            Bilaspur – a
+                            stepping stone toward academic excellence and personal growth!</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Sr. Secondary</h5>
-                        <p class="card-text">Welcome to Senior Secondary Education at New Happy Public School,
-                            Bilaspur – a crucial phase where academic excellence meets future aspirations!</p>
+                        <p class="card-text">Welcome to Senior Secondary Education at New Happy Public School, Bilaspur
+                            – a
+                            crucial phase where academic excellence meets future aspirations!</p>
                     </div>
                 </div>
             </div>
@@ -131,16 +115,17 @@
     <section id="why">
         <div class="container">
             <h2>Why To Choose NHPS</h2>
-            <img src="./ad.jpg" alt="image" style="width: 100%; border-radius: 0%; text-align: center;">
+            <img src="./ad.jpg" alt="image" style="width: 70%; height:auto; text-align: center;">
             <h4>300+ Happy Students (Happians)</h4>
             <h4>100+ Students settled abroad</h4>
             <h4>Co-curricular activities</h4>
             <h5>and much more</h5>
         </div>
     </section>
+    <!-- Other sections remain unchanged -->
 
     <footer class="bg-light">
-        <div class="container">
+        <div class="container" style="background-color: #01416f;">
             <p>&copy; All rights reserved.</p>
             <p>This website is submitted to school as a project by Radhika Aggarwal (11th non-med)</p>
             <p>Website created by <a href="https://www.adarshdhiman.me/" target="_blank">DhimanTechBytes</a></p>
@@ -152,8 +137,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="./script.js">
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
